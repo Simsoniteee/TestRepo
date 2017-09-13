@@ -1,0 +1,1 @@
+"./TMP006.obj" "./main.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "../driverlib.lib" -llibc.a 
