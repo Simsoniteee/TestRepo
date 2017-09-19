@@ -1,0 +1,215 @@
+Circuit: * D:\Christian\Projekt\Multiphase\B_Hardware\Temperaturmessung\Simulation\LTSpice\PT1000_Circuit.asc
+
+WARNING: Less than two connections to node OUT1.  This node is used by R2.
+Instance "m:u1:114": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:113": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:9c": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:9": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:8": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:4": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:3": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:7": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+Gmin = 0.00053587
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 0.000554092
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0.000556188
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 85.0379%
+vernier = 0.015625
+Source Step = 84.8722%
+Source Step = 84.9018%
+Source Step = 84.9313%
+Source Step = 84.9609%
+Source Step = 84.9905%
+vernier = 0.00146484
+Source Step = 85.0275%
+Source Step = 85.0719%
+Source Step = 85.1163%
+Source Step = 85.1607%
+Source Step = 85.2051%
+vernier = 0.00219727
+Source Step = 85.2583%
+Source Step = 85.3249%
+Source Step = 85.3915%
+Source Step = 85.4581%
+Source Step = 85.5247%
+vernier = 0.0032959
+Source Step = 85.6013%
+Source Step = 85.7011%
+Source Step = 85.801%
+Source Step = 85.9009%
+Source Step = 86.0008%
+vernier = 0.00494385
+Source Step = 86.1106%
+Source Step = 86.2604%
+Source Step = 86.4102%
+Source Step = 86.5601%
+Source Step = 86.7099%
+vernier = 0.00741577
+Source Step = 86.8672%
+Source Step = 87.0919%
+Source Step = 87.3166%
+Source Step = 87.5413%
+Source Step = 87.7661%
+Source Step = 87.9908%
+vernier = 0.0111237
+Source Step = 88.3279%
+Source Step = 88.6649%
+Source Step = 89.002%
+Source Step = 89.3391%
+Source Step = 89.6762%
+vernier = 0.0166855
+Source Step = 90.1649%
+Source Step = 90.6706%
+Source Step = 91.1762%
+Source Step = 91.6818%
+Source Step = 92.1874%
+vernier = 0.0250282
+Source Step = 92.8953%
+Source Step = 93.6537%
+Source Step = 94.4122%
+Source Step = 95.1706%
+Source Step = 95.929%
+vernier = 0.0375423
+Source Step = 96.9529%
+Source Step = 98.0906%
+Source Step = 99.2282%
+Source stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:2      d:u1:1      d:u1:8      d:u1:7      d:u1:6
+Model:    u1:dx       u1:dx       u1:dx       u1:dx       u1:dx
+Id:     -1.51e-12   -7.66e-13   -7.52e-14   -7.53e-14   -4.94e-12
+Vd:     -1.50e+00   -7.56e-01   -6.60e-02   -6.61e-02   -4.93e+00
+Req:     1.00e+12    1.00e+12    9.71e+11    9.71e+11    1.00e+12
+CAP:     6.32e-14    7.55e-14    9.69e-14    9.69e-14    4.11e-14
+
+Name:    d:u1:5      d:u1:4      d:u1:3      d:u2:3      d:u2:1
+Model:    u1:dx       u1:dx       u1:dx       u2:d        u2:d
+Id:     -4.94e-12   -4.79e-13   -3.78e-12   -1.91e-12   -1.71e-12
+Vd:     -4.93e+00   -4.69e-01   -3.77e+00   -9.54e-01   -8.54e-01
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e-12    1.00e-12
+CAP:     4.11e-14    8.25e-14    4.58e-14    0.00e+00    0.00e+00
+
+Name:    d:u4:6      d:u4:5      d:u4:4      d:u4:1      d:u4:3
+Model:    u4:x        u4:x        u4:y        u4:y      u4:dcpow
+Id:     -3.17e-11   -3.74e-11   -7.80e-14    7.80e-14    1.37e-03
+Vd:     -2.30e+00   -2.70e+00   -3.90e-02    3.90e-02    5.00e+00
+Req:     1.28e-11    1.28e-11    1.00e-12    1.00e-12    1.00e-02
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u4:2      d:u3:6      d:u3:5      d:u3:4      d:u3:1
+Model:    u4:di       u3:x        u3:x        u3:y        u3:y
+Id:      5.62e-04   -5.23e-11    9.18e-06   -2.04e-13    2.04e-13
+Vd:      2.06e+00   -3.79e+00   -1.21e+00   -1.02e-01    1.02e-01
+Req:     1.00e-03    1.28e-11    1.00e-03    1.00e-12    1.00e-12
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u3:3      d:u3:2
+Model:  u3:dcpow      u3:di
+Id:      1.37e-03   -4.58e-12
+Vd:      5.00e+00   -4.16e-01
+Req:     1.00e-02    1.00e-11
+CAP:     0.00e+00    0.00e+00
+
+                        --- Bipolar Transistors ---
+Name:     q:u2:12     q:u2:7      q:u2:3      q:u2:1
+Model:     u2:pa       u2:na       u2:np       u2:n
+Ib:      -3.70e-05    5.00e-07    2.05e-06    4.36e-07
+Ic:      -2.96e-03    6.25e-05    1.23e-03    5.45e-05
+Vbe:     -8.02e-01    7.03e-01    7.80e-01    6.99e-01
+Vbc:     -2.27e-02   -9.54e-01   -8.54e-01   -6.80e-01
+Vce:     -7.80e-01    1.66e+00    1.63e+00    1.38e+00
+BetaDC:   8.00e+01    1.25e+02    6.00e+02    1.25e+02
+Gm:       1.14e-01    2.42e-03    4.76e-02    2.11e-03
+Rpi:      7.00e+02    5.17e+04    1.26e+04    5.93e+04
+Rx:       0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ro:       1.08e+14    2.69e+30    5.69e+28    6.73e+25
+Cbe:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbc:      0.00e+00    0.00e+00    0.00e+00    3.23e-11
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   8.00e+01    1.25e+02    6.00e+02    1.25e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00    0.00e+00    1.04e+07
+
+                        --- VDMOSFET Transistors ---
+Name:        m:u4:2      m:u4:1      m:u3:2      m:u3:1
+Model:        u4:p        u4:n        u3:p        u3:n
+Id:         -1.03e-03    1.59e-03   -6.66e-04    2.13e-03
+Vgs:         3.90e-02    3.90e-02    1.02e-01    1.02e-01
+Vds:        -2.26e+00    2.74e+00   -3.68e+00    1.32e+00
+Vth:         3.60e-01   -3.60e-01    3.60e-01   -3.60e-01
+Gm:          6.42e-03    7.98e-03    5.16e-03    9.24e-03
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbody:       0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+                        --- MOSFET Transistors ---
+Name:       m:u1:114    m:u1:113     m:u1:2      m:u1:1      m:u1:9c
+Model:       u1:nox      u1:pox      u1:nix      u1:nix      u1:nix
+Id:          5.19e-03   -9.90e-12    9.54e-12    9.54e-12    7.62e-12
+Vgs:         1.16e+00   -4.15e-01   -4.03e-01   -4.03e-01    9.01e-01
+Vds:         7.61e-02   -4.94e+00    4.53e+00    4.53e+00    1.10e-08
+Vbs:         0.00e+00    0.00e+00   -4.69e-01   -4.69e-01   -4.69e-01
+Vth:         7.50e-01   -7.50e-01    7.50e-01    7.50e-01    7.50e-01
+Vdsat:       4.11e-01    0.00e+00    0.00e+00    0.00e+00    1.51e-01
+Gm:          1.38e-02    0.00e+00    0.00e+00    0.00e+00    3.78e-11
+Gds:         6.62e-02    0.00e+00    0.00e+00    0.00e+00    5.17e-04
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         2.24e-13    8.73e-14    8.69e-14    8.69e-14    7.43e-13
+Cbs:         2.34e-13    2.34e-13    1.86e-13    1.86e-13    7.43e-13
+Cgsov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       1.88e-13    1.88e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:        m:u1:9      m:u1:8      m:u1:4      m:u1:3      m:u1:7
+Model:       u1:nix      u1:nix      u1:pix      u1:pix      u1:pix
+Id:          3.79e-12    4.98e-12   -7.50e-05   -7.50e-05   -4.98e-12
+Vgs:         6.17e-01    6.17e-01   -1.17e+00   -1.17e+00    2.47e+00
+Vds:         4.69e-01    6.17e-01   -8.72e-01   -8.72e-01   -6.17e-01
+Vbs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Vth:         7.50e-01    7.50e-01   -7.50e-01   -7.50e-01   -7.50e-01
+Vdsat:       0.00e+00    0.00e+00   -4.19e-01   -4.19e-01    0.00e+00
+Gm:          0.00e+00    0.00e+00    3.58e-04    3.58e-04    0.00e+00
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         7.43e-13    7.03e-13    1.62e-13    1.62e-13    7.03e-13
+Cbs:         9.36e-13    9.36e-13    2.34e-13    2.34e-13    9.36e-13
+Cgsov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+

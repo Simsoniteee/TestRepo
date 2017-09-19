@@ -1,0 +1,12 @@
+Title: * D:\Christian\Projekt\Multiphase\B_Hardware\Temperaturmessung\Simulation\LTSpice\PT1000_Circuit_v04.asc
+Date: Tue Sep 19 09:32:41 2017
+Plotname: Operating Point
+Flags: real stepped
+No. Variables: 34
+No. Points:            0
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Backannotation: u1 + - v+ v- out
+Backannotation: u2 + - v+ v- out
+Backannotation: u3 + - v+ v- out
+Variables:

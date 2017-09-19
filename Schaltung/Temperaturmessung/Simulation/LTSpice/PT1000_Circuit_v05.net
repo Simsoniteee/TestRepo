@@ -1,0 +1,23 @@
+* D:\Christian\Projekt\Multiphase\B_Hardware\Temperaturmessung\Simulation\LTSpice\PT1000_Circuit_v05.asc
+V1 Vcc 0 3.3
+RTC1 N001 0 {R}
+I1 0 N001 1m
+XU1 N005 N002 Vcc 0 N003 OPA340 OPA340
+R1 N005 Ue 10k
+R2 N002 Vref 10k
+R3 N005 0 402k
+R4 N002 N003 402k
+XU2 N004 Vref Vcc 0 Vref OPA340 OPA340
+R5 Vcc N004 33k
+R6 N004 0 1k
+C1 N004 0 100n
+XU3 N001 Ue Vcc 0 Ue OPA340 OPA340
+.step param Temp1 0 200 5
+.inc OPA340.LIB
+.param TK=273.15
+.param T0=TK+25
+.param R=100*(1+Temp1*0.00385)
+.op
+;tran 0.1 startup
+.backanno
+.end

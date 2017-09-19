@@ -1,0 +1,8 @@
+- the platinum RTD temperaturesensing element is the most accurate, linear and stable over time [ 1] and temperature
+- the 100Ω platinum RTD is the most stable over time and linear over temperature
+- RTD element requires a current excitation. If the magnitude of the current source is too high, the element will dissipate power and start to self-heat. Consequently, care should be taken to insure that less than 1 mA of current is used to excite the RTD element
+- The platinum RTD temperature sensor’s accuracy is better than other sensors, such as the thermocouple and thermistor.
+
+
+https://de.wikibooks.org/wiki/Linearisierung_von_resistiven_Sensoren/_Pt100
+https://www.heise.de/ct/artikel/Sensibelchen-289608.html

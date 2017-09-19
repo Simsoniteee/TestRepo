@@ -1,0 +1,424 @@
+Circuit: * D:\Christian\Projekt\Multiphase\B_Hardware\Temperaturmessung\Simulation\LTSpice\PT1000_Circuit_v05.asc
+
+Instance "m:u3:114": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:113": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:9c": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:9": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:8": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:4": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:3": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u3:7": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:114": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:113": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:9c": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:9": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:8": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:4": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:3": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:7": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:114": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:113": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:9c": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:9": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:8": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:4": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:3": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:7": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 0.000862669
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 0.000865768
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0.00086524
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 40.0568%
+Source Step = 40.5303%
+Source Step = 41.0038%
+Source Step = 41.3944%
+vernier = 0.000976563
+Source Step = 41.4122%
+Source Step = 41.4418%
+Source Step = 41.4714%
+Source Step = 41.5009%
+Source Step = 41.5305%
+vernier = 0.00146484
+Source Step = 41.5705%
+Source Step = 41.6149%
+Source Step = 41.6593%
+Source Step = 41.7037%
+Source Step = 41.748%
+vernier = 0.00219727
+Source Step = 41.8058%
+Source Step = 41.8723%
+Source Step = 41.9389%
+Source Step = 42.0055%
+Source Step = 42.0721%
+vernier = 0.0032959
+Source Step = 42.1553%
+Source Step = 42.2552%
+Source Step = 42.3551%
+Source Step = 42.4549%
+Source Step = 42.5548%
+vernier = 0.00494385
+Source Step = 42.6747%
+Source Step = 42.8245%
+Source Step = 42.9743%
+Source Step = 43.1241%
+Source Step = 43.2739%
+vernier = 0.00741577
+Source Step = 43.4462%
+Source Step = 43.6709%
+Source Step = 43.8957%
+Source Step = 44.1204%
+Source Step = 44.3451%
+vernier = 0.0111237
+Source Step = 44.5923%
+Source Step = 44.9294%
+Source Step = 45.2664%
+Source Step = 45.6035%
+Source Step = 45.9406%
+vernier = 0.0166855
+Source Step = 46.2945%
+Source Step = 46.8002%
+Source Step = 47.3058%
+Source Step = 47.8114%
+Source Step = 48.317%
+Source Step = 48.8226%
+vernier = 0.0250282
+Source Step = 49.5811%
+Source Step = 50.3395%
+Source Step = 51.0979%
+Source Step = 51.8564%
+Source Step = 52.6148%
+vernier = 0.0375423
+Source Step = 53.7145%
+Source Step = 54.8522%
+Source Step = 55.9898%
+Source Step = 57.1275%
+Source Step = 58.2651%
+vernier = 0.0563135
+Source Step = 59.8578%
+Source Step = 61.5643%
+Source Step = 63.2708%
+Source Step = 64.9772%
+Source Step = 66.6837%
+vernier = 0.0844703
+Source Step = 68.9874%
+Source Step = 71.5471%
+Source Step = 74.1068%
+Source Step = 76.6666%
+Source Step = 79.2263%
+vernier = 0.126705
+Source Step = 82.5539%
+Source Step = 86.3934%
+Source Step = 90.233%
+Source Step = 90.6529%
+Source Step = 90.7129%
+Source Step = 90.7729%
+Source Step = 90.8329%
+Source Step = 90.8929%
+Source Step = 90.9529%
+Source Step = 91.0129%
+Source Step = 91.0729%
+Source Step = 91.1329%
+Source Step = 91.1929%
+Source Step = 91.2529%
+Source Step = 91.3129%
+Source Step = 91.3729%
+Source Step = 91.4328%
+Source Step = 91.4928%
+Source Step = 91.5528%
+Source Step = 91.6128%
+Source Step = 91.6728%
+Source Step = 91.7328%
+Source Step = 91.7928%
+Source Step = 91.8528%
+Source Step = 91.9128%
+Source Step = 91.9728%
+Source Step = 92.0328%
+Source Step = 92.0928%
+Source Step = 92.1528%
+Source Step = 92.2128%
+Source Step = 92.2728%
+Source Step = 92.3327%
+Source Step = 92.3927%
+Source Step = 92.4527%
+Source Step = 92.5127%
+Source Step = 92.5727%
+Source Step = 92.6327%
+Source Step = 92.6927%
+Source Step = 92.7527%
+Source Step = 92.8127%
+Source Step = 92.8727%
+Source Step = 92.9327%
+Source Step = 92.9927%
+Source Step = 93.0527%
+Source Step = 93.1127%
+Source Step = 93.1726%
+Source Step = 93.2326%
+Source Step = 93.2926%
+Source Step = 93.3526%
+Source Step = 93.4126%
+Source Step = 93.4726%
+Source Step = 93.5326%
+Source Step = 93.5926%
+Source Step = 93.6526%
+Source Step = 93.7126%
+Source Step = 93.7726%
+Source Step = 93.8326%
+Source Step = 93.8926%
+Source Step = 93.9526%
+Source Step = 94.0126%
+Source Step = 94.0725%
+Source Step = 94.1325%
+Source Step = 94.1925%
+Source Step = 94.2525%
+Source Step = 94.3125%
+Source Step = 94.3725%
+Source Step = 94.4325%
+Source Step = 94.4925%
+Source Step = 94.5525%
+Source Step = 94.6125%
+Source Step = 94.6725%
+Source Step = 94.7325%
+Source Step = 94.7925%
+Source Step = 94.8525%
+Source Step = 94.9124%
+Source Step = 94.9724%
+Source Step = 95.0324%
+Source Step = 95.0924%
+vernier = 0.00296966
+Source Step = 95.1584%
+Source Step = 95.2484%
+Source Step = 95.3384%
+Source Step = 95.4284%
+Source Step = 95.5184%
+vernier = 0.00445449
+Source Step = 95.6129%
+Source Step = 95.7479%
+Source Step = 95.8828%
+Source Step = 96.0178%
+Source Step = 96.1528%
+Source Step = 96.2878%
+vernier = 0.00668173
+Source Step = 96.4903%
+Source Step = 96.6927%
+Source Step = 96.8952%
+Source Step = 97.0977%
+Source Step = 97.3002%
+vernier = 0.0100226
+Source Step = 97.5938%
+Source Step = 97.8975%
+Source Step = 98.2012%
+Source Step = 98.5049%
+Source Step = 98.8086%
+vernier = 0.0150339
+Source Step = 99.2338%
+Source Step = 99.6894%
+Source stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u3:2      d:u3:1      d:u3:8      d:u3:7      d:u3:6
+Model:    u3:dx       u3:dx       u3:dx       u3:dx       u3:dx
+Id:     -2.90e-13   -2.90e-13   -1.10e-13   -1.10e-13   -3.21e-12
+Vd:     -2.80e-01   -2.80e-01   -1.00e-01   -1.00e-01   -3.20e+00
+Req:     1.00e+12    1.00e+12    9.92e+11    9.92e+11    1.00e+12
+CAP:     8.84e-14    8.84e-14    9.53e-14    9.53e-14    4.88e-14
+
+Name:    d:u3:5      d:u3:4      d:u3:3      d:u2:2      d:u2:1
+Model:    u3:dx       u3:dx       u3:dx       u2:dx       u2:dx
+Id:     -3.21e-12   -3.17e-13   -2.04e-12   -2.90e-13   -2.90e-13
+Vd:     -3.20e+00   -3.07e-01   -2.03e+00   -2.80e-01   -2.80e-01
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    1.00e+12
+CAP:     4.88e-14    8.75e-14    5.74e-14    8.84e-14    8.84e-14
+
+Name:    d:u2:8      d:u2:7      d:u2:6      d:u2:5      d:u2:4
+Model:    u2:dx       u2:dx       u2:dx       u2:dx       u2:dx
+Id:     -1.07e-13   -1.07e-13   -3.21e-12   -3.21e-12   -3.17e-13
+Vd:     -9.71e-02   -9.71e-02   -3.20e+00   -3.20e+00   -3.07e-01
+Req:     9.91e+11    9.91e+11    1.00e+12    1.00e+12    1.00e+12
+CAP:     9.55e-14    9.55e-14    4.88e-14    4.88e-14    8.75e-14
+
+Name:    d:u2:3      d:u1:2      d:u1:1      d:u1:8      d:u1:7
+Model:    u2:dx       u1:dx       u1:dx       u1:dx       u1:dx
+Id:     -2.04e-12   -2.90e-13   -2.90e-13   -1.07e-13   -1.07e-13
+Vd:     -2.03e+00   -2.80e-01   -2.80e-01   -9.76e-02   -9.76e-02
+Req:     1.00e+12    1.00e+12    1.00e+12    9.91e+11    9.91e+11
+CAP:     5.74e-14    8.84e-14    8.84e-14    9.55e-14    9.55e-14
+
+Name:    d:u1:6      d:u1:5      d:u1:4      d:u1:3
+Model:    u1:dx       u1:dx       u1:dx       u1:dx
+Id:     -3.21e-12   -3.21e-12   -3.17e-13   -2.04e-12
+Vd:     -3.20e+00   -3.20e+00   -3.07e-01   -2.03e+00
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12
+CAP:     4.88e-14    4.88e-14    8.75e-14    5.74e-14
+
+                        --- MOSFET Transistors ---
+Name:       m:u3:114    m:u3:113     m:u3:2      m:u3:1      m:u3:9c
+Model:       u3:nox      u3:pox      u3:nix      u3:nix      u3:nix
+Id:          1.50e-04   -1.50e-04    6.30e-12    6.30e-12    5.03e-12
+Vgs:         7.89e-01   -7.89e-01   -2.07e-01   -2.07e-01    1.06e+00
+Vds:         1.10e-01   -3.21e+00    2.99e+00    2.99e+00    3.52e-09
+Vbs:         0.00e+00    0.00e+00   -3.07e-01   -3.07e-01   -3.07e-01
+Vth:         7.50e-01   -7.50e-01    7.50e-01    7.50e-01    7.50e-01
+Vdsat:       3.92e-02   -3.92e-02    0.00e+00    0.00e+00    3.13e-01
+Gm:          7.64e-03    7.64e-03    0.00e+00    0.00e+00    1.20e-11
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    1.07e-03
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         2.19e-13    1.05e-13    1.03e-13    1.03e-13    7.96e-13
+Cbs:         2.34e-13    2.34e-13    1.99e-13    1.99e-13    7.96e-13
+Cgsov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       1.88e-13    1.88e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:        m:u3:9      m:u3:8      m:u3:4      m:u3:3      m:u3:7
+Model:       u3:nix      u3:nix      u3:pix      u3:pix      u3:pix
+Id:          2.50e-12    5.11e-12   -7.50e-05   -7.50e-05   -5.11e-12
+Vgs:         6.34e-01    6.34e-01   -1.17e+00   -1.17e+00    7.31e-01
+Vds:         3.07e-01    6.34e-01   -9.06e-01   -9.06e-01   -6.34e-01
+Vbs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Vth:         7.50e-01    7.50e-01   -7.50e-01   -7.50e-01   -7.50e-01
+Vdsat:       0.00e+00    0.00e+00   -4.19e-01   -4.19e-01    0.00e+00
+Gm:          0.00e+00    0.00e+00    3.58e-04    3.58e-04    0.00e+00
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         7.96e-13    6.99e-13    1.60e-13    1.60e-13    6.99e-13
+Cbs:         9.36e-13    9.36e-13    2.34e-13    2.34e-13    9.36e-13
+Cgsov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:       m:u2:114    m:u2:113     m:u2:2      m:u2:1      m:u2:9c
+Model:       u2:nox      u2:pox      u2:nix      u2:nix      u2:nix
+Id:          1.50e-04   -1.50e-04    6.30e-12    6.30e-12    5.03e-12
+Vgs:         7.89e-01   -7.89e-01   -2.10e-01   -2.10e-01    1.06e+00
+Vds:         1.07e-01   -3.21e+00    2.99e+00    2.99e+00    3.52e-09
+Vbs:         0.00e+00    0.00e+00   -3.07e-01   -3.07e-01   -3.07e-01
+Vth:         7.50e-01   -7.50e-01    7.50e-01    7.50e-01    7.50e-01
+Vdsat:       3.92e-02   -3.92e-02    0.00e+00    0.00e+00    3.13e-01
+Gm:          7.64e-03    7.64e-03    0.00e+00    0.00e+00    1.20e-11
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    1.07e-03
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         2.20e-13    1.04e-13    1.03e-13    1.03e-13    7.96e-13
+Cbs:         2.34e-13    2.34e-13    1.99e-13    1.99e-13    7.96e-13
+Cgsov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       1.88e-13    1.88e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:        m:u2:9      m:u2:8      m:u2:4      m:u2:3      m:u2:7
+Model:       u2:nix      u2:nix      u2:pix      u2:pix      u2:pix
+Id:          2.50e-12    5.10e-12   -7.50e-05   -7.50e-05   -5.10e-12
+Vgs:         6.33e-01    6.33e-01   -1.17e+00   -1.17e+00    7.34e-01
+Vds:         3.07e-01    6.33e-01   -9.03e-01   -9.03e-01   -6.33e-01
+Vbs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Vth:         7.50e-01    7.50e-01   -7.50e-01   -7.50e-01   -7.50e-01
+Vdsat:       0.00e+00    0.00e+00   -4.19e-01   -4.19e-01    0.00e+00
+Gm:          0.00e+00    0.00e+00    3.58e-04    3.58e-04    0.00e+00
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         7.96e-13    6.99e-13    1.60e-13    1.60e-13    6.99e-13
+Cbs:         9.36e-13    9.36e-13    2.34e-13    2.34e-13    9.36e-13
+Cgsov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:       m:u1:114    m:u1:113     m:u1:2      m:u1:1      m:u1:9c
+Model:       u1:nox      u1:pox      u1:nix      u1:nix      u1:nix
+Id:          1.50e-04   -1.50e-04    6.30e-12    6.30e-12    5.03e-12
+Vgs:         7.89e-01   -7.89e-01   -2.10e-01   -2.10e-01    1.06e+00
+Vds:         1.28e-01   -3.19e+00    2.99e+00    2.99e+00    3.52e-09
+Vbs:         0.00e+00    0.00e+00   -3.07e-01   -3.07e-01   -3.07e-01
+Vth:         7.50e-01   -7.50e-01    7.50e-01    7.50e-01    7.50e-01
+Vdsat:       3.92e-02   -3.92e-02    0.00e+00    0.00e+00    3.13e-01
+Gm:          7.64e-03    7.64e-03    0.00e+00    0.00e+00    1.20e-11
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    1.07e-03
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         2.17e-13    1.05e-13    1.03e-13    1.03e-13    7.96e-13
+Cbs:         2.34e-13    2.34e-13    1.99e-13    1.99e-13    7.96e-13
+Cgsov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       1.88e-13    1.88e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:        m:u1:9      m:u1:8      m:u1:4      m:u1:3      m:u1:7
+Model:       u1:nix      u1:nix      u1:pix      u1:pix      u1:pix
+Id:          2.50e-12    5.10e-12   -7.50e-05   -7.50e-05   -5.10e-12
+Vgs:         6.33e-01    6.33e-01   -1.17e+00   -1.17e+00    7.34e-01
+Vds:         3.07e-01    6.33e-01   -9.04e-01   -9.04e-01   -6.33e-01
+Vbs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Vth:         7.50e-01    7.50e-01   -7.50e-01   -7.50e-01   -7.50e-01
+Vdsat:       0.00e+00    0.00e+00   -4.19e-01   -4.19e-01    0.00e+00
+Gm:          0.00e+00    0.00e+00    3.58e-04    3.58e-04    0.00e+00
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         7.96e-13    6.99e-13    1.60e-13    1.60e-13    6.99e-13
+Cbs:         9.36e-13    9.36e-13    2.34e-13    2.34e-13    9.36e-13
+Cgsov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+
+
+Date: Tue Sep 19 09:39:19 2017
+Total elapsed time: 284.867 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 16385
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 249
+fillins = 363
+solver = Normal
+Thread vector: 21.8/10.5[3] 0.0/0.0[0] 7.0/2.4[3] 1.2/1.4[1]  2592/500
+Matrix Compiler1: 38.97 KB object code size
+Matrix Compiler2: 29.11 KB object code size  4.6/5.0/[1.5]
+
+

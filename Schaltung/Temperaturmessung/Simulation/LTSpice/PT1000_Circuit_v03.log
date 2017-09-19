@@ -1,0 +1,109 @@
+Circuit: * D:\Christian\Projekt\Multiphase\B_Hardware\Temperaturmessung\Simulation\LTSpice\PT1000_Circuit_v03.asc
+
+Instance "m:u1:114": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:113": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:9c": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:9": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:8": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:4": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:3": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:7": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:2      d:u1:1      d:u1:8      d:u1:7      d:u1:6
+Model:    u1:dx       u1:dx       u1:dx       u1:dx       u1:dx
+Id:     -2.90e-13   -2.90e-13   -1.10e-13   -1.10e-13   -3.21e-12
+Vd:     -2.80e-01   -2.80e-01   -1.00e-01   -1.00e-01   -3.20e+00
+Req:     1.00e+12    1.00e+12    9.92e+11    9.92e+11    1.00e+12
+CAP:     8.84e-14    8.84e-14    9.53e-14    9.53e-14    4.88e-14
+
+Name:    d:u1:5      d:u1:4      d:u1:3
+Model:    u1:dx       u1:dx       u1:dx
+Id:     -3.21e-12   -3.17e-13   -2.04e-12
+Vd:     -3.20e+00   -3.07e-01   -2.03e+00
+Req:     1.00e+12    1.00e+12    1.00e+12
+CAP:     4.88e-14    8.75e-14    5.74e-14
+
+                        --- MOSFET Transistors ---
+Name:       m:u1:114    m:u1:113     m:u1:2      m:u1:1      m:u1:9c
+Model:       u1:nox      u1:pox      u1:nix      u1:nix      u1:nix
+Id:          1.50e-04   -1.50e-04    6.30e-12    6.30e-12    5.03e-12
+Vgs:         7.89e-01   -7.89e-01   -2.07e-01   -2.07e-01    1.06e+00
+Vds:         1.10e-01   -3.21e+00    2.99e+00    2.99e+00    3.52e-09
+Vbs:         0.00e+00    0.00e+00   -3.07e-01   -3.07e-01   -3.07e-01
+Vth:         7.50e-01   -7.50e-01    7.50e-01    7.50e-01    7.50e-01
+Vdsat:       3.92e-02   -3.92e-02    0.00e+00    0.00e+00    3.13e-01
+Gm:          7.64e-03    7.64e-03    0.00e+00    0.00e+00    1.20e-11
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    1.07e-03
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         2.19e-13    1.05e-13    1.03e-13    1.03e-13    7.96e-13
+Cbs:         2.34e-13    2.34e-13    1.99e-13    1.99e-13    7.96e-13
+Cgsov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       1.00e-13    1.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       1.88e-13    1.88e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:        m:u1:9      m:u1:8      m:u1:4      m:u1:3      m:u1:7
+Model:       u1:nix      u1:nix      u1:pix      u1:pix      u1:pix
+Id:          2.50e-12    5.11e-12   -7.50e-05   -7.50e-05   -5.11e-12
+Vgs:         6.34e-01    6.34e-01   -1.17e+00   -1.17e+00    7.31e-01
+Vds:         3.07e-01    6.34e-01   -9.06e-01   -9.06e-01   -6.34e-01
+Vbs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Vth:         7.50e-01    7.50e-01   -7.50e-01   -7.50e-01   -7.50e-01
+Vdsat:       0.00e+00    0.00e+00   -4.19e-01   -4.19e-01    0.00e+00
+Gm:          0.00e+00    0.00e+00    3.58e-04    3.58e-04    0.00e+00
+Gds:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Gmb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cbd:         7.96e-13    6.99e-13    1.60e-13    1.60e-13    6.99e-13
+Cbs:         9.36e-13    9.36e-13    2.34e-13    2.34e-13    9.36e-13
+Cgsov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgdov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgbov:       4.00e-13    4.00e-13    1.00e-13    1.00e-13    4.00e-13
+Cgs:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Cgb:         0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+
+
+Date: Tue Jul 25 21:32:42 2017
+Total elapsed time: 10.425 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 443
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 87
+fillins = 88
+solver = Normal
+Matrix Compiler1: 11.53 KB object code size
+Matrix Compiler2: 9.26 KB object code size  2.0/1.4/[0.4]
+
+
