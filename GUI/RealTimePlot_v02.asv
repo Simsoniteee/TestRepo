@@ -1,0 +1,67 @@
+clear all
+close all
+clc
+
+%User Defined Properties 
+serialPort = 'COM10';           % define COM port #
+plotTitle = 'Serial Data Plot'; % plot title
+xLabel = 'Elapsed Time (s)';    % x-axis label
+yLabel = 'Serial Data';         % y-axis label
+plotGrid = 'on';                % 'off' to turn off grid
+yMin = 0;                       % set y-min
+yMax = 120;                     % set y-max
+scrollWidth = 10;               % display period in plot, plot entire data log if <= 0
+delay = .0000001;               % make sure sample faster than resolution
+
+%Define Function Variables
+time = 0;
+data = zeros(1,1);
+count = 0;
+
+%Set up Plot
+plotGraph = plot(time,data(1,:),'-r',...
+            'LineWidth',2,...
+            'MarkerFaceColor','w',...
+            'MarkerSize',2);
+
+title(plotTitle,'FontSize',10);
+xlabel(xLabel,'FontSize',10);
+ylabel(yLabel,'FontSize',10);
+axis([0 10 yMin yMax]);
+grid(plotGrid);
+
+%Open Serial COM Port
+s = serial(serialPort, 'BaudRate', 9600);
+disp('Close Plot to End Session');
+fopen(s);
+
+tic
+
+while ishandle(plotGraph)  %Loop when Plot is Active
+
+dat = fscanf(s,'%f'); %Read Data from Serial as Float
+
+if(~isempty(dat) && isfloat(dat)) %Make sure Data Type is Correct        
+    count = count + 1;    
+    time(count) = toc;    %Extract Elapsed Time in seconds
+    data(:,count) = dat(:,1); %Extract 1st Data Element         
+
+%     %Set Axis according to Scroll Width
+%     if(scrollWidth > 0)
+%     set(plotGraph,'XData',time(time > time(count)-scrollWidth),...
+%         'YData', data(1,time > time(count)-scrollWidth));
+%     axis([time(count)-scrollWidth time(count) min max]);
+%     else
+%     set(plotGraph,'XData',time,'YData',data(1,:));
+%     axis([0 time(count) min max]);
+%     end
+
+    %Allow MATLAB to Update Plot
+    pause(delay);
+end
+end
+
+
+fclose(s);
+delete(s);
+clear s;

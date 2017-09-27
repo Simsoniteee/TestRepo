@@ -12,21 +12,27 @@ LIB_SRCS += \
 ../driverlib.lib 
 
 C_SRCS += \
+../UART.c \
 ../main.c 
 
 C_DEPS += \
+./UART.d \
 ./main.d 
 
 OBJS += \
+./UART.obj \
 ./main.obj 
 
 OBJS__QUOTED += \
+"UART.obj" \
 "main.obj" 
 
 C_DEPS__QUOTED += \
+"UART.d" \
 "main.d" 
 
 C_SRCS__QUOTED += \
+"../UART.c" \
 "../main.c" 
 
 

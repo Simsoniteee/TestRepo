@@ -16,27 +16,21 @@
 //
 #include "driverlib.h"
 #include "device.h"
+#include "UART.h"
 
 //
 // #Defines
 //
 
-
 //
 // Prototypes
 //
 void systemInit(void);
-void uartInit(void);
 void gpiosInit(void);
-
-__interrupt void sciaRXFIFOISR(void);
-__interrupt void sciaTXFIFOISR(void);
 
 //
 // Global Variables
 //
-uint16_t rDataA[2];
-uint16_t rFlag;
 
 //
 // Main
@@ -45,9 +39,42 @@ void main(void)
 {
     systemInit();
 
+    uartOutString("Testing of Uart I/O Functions");
+    uartOutCRLF();
+    uartOutString("**************************");
+    uartOutCRLF();
+    uartOutCRLF();
+
     while(1)
     {
+/*        // Testing uartInString() and uartOutString()
+        char cTestArray[30];
+        uartOutString("Type a String and press Enter. String is limited to 30 characters: ");
+        uartInString(cTestArray, sizeof(cTestArray));
+        uartOutCRLF();
+        uartOutString("You typed: ");
+        uartOutString(cTestArray);
+        uartOutCRLF();
 
+        // Testing uartInDec() and uartOutDec()
+        uint32_t ui32TestDec;
+        uartOutString("Type an unsigned decimal number from 0 to 4294967295: ");
+        ui32TestDec = uartInDec();
+        uartOutCRLF();
+        uartOutString("You typed: ");
+        uartOutDec(ui32TestDec);
+        uartOutCRLF();*/
+
+        int32_t i;
+        for(i=0; i<100; i++)
+        {
+            uartOutDec(i);
+            uartOutCRLF();
+            DEVICE_DELAY_US(100000);
+        }/*
+        char cData=0;
+        while((cData=uartInChar())==0){}
+        uartOutChar(cData);*/
     }
 
 }
@@ -82,10 +109,10 @@ void systemInit(void)
      Interrupt_initVectorTable();
 
      //
-     // ISR functions for sci RX and TX interrupt
+     // ISR functions for Uart Rx and Tx interrupt. The interrupts are defined in UART.c
      //
-     Interrupt_register(INT_SCIA_RX, sciaRXFIFOISR);
-     Interrupt_register(INT_SCIA_TX, sciaTXFIFOISR);
+     //Interrupt_register(INT_SCIA_RX, sciaRxISR);
+     //Interrupt_register(INT_SCIA_TX, sciaTxISR);
 
      //
      // Initialize the UART and the other peripherals
@@ -93,12 +120,11 @@ void systemInit(void)
      uartInit();
 
      //
-     // Enable sci interrupts and clear ack groups
+     // Enable sci interrupts and clear ack group
      //
-     Interrupt_enable(INT_SCIA_RX);
-     Interrupt_disable(INT_SCIA_TX);
-
-     Interrupt_clearACKGroup(INTERRUPT_ACK_GROUP9);
+     //Interrupt_enable(INT_SCIA_RX);
+     //Interrupt_enable(INT_SCIA_TX);
+     //Interrupt_clearACKGroup(INTERRUPT_ACK_GROUP9);
 
      //
      // Enable Global Interrupt (INTM) and realtime interrupt (DBGM)
@@ -129,77 +155,6 @@ void gpiosInit(void)
     GPIO_setDirectionMode(42, GPIO_DIR_MODE_OUT);
     GPIO_setPadConfig(42, GPIO_PIN_TYPE_STD);
     GPIO_setQualificationMode(42, GPIO_QUAL_ASYNC);
-}
-
-
-// uartInit - Initialize the UART: baudrate=9600, wordlength=8, stopbit=1, paritiy=none
-// Input: -
-// Output: -
-void uartInit(void)
-{
-    SCI_performSoftwareReset(SCIA_BASE);
-    //
-    // 8 char bits, 1 stop bit, no parity. Baud rate is 9600. Enable FIFOs
-    //
-    SCI_setConfig(SCIA_BASE, DEVICE_LSPCLK_FREQ, 9600, (SCI_CONFIG_WLEN_8 | SCI_CONFIG_STOP_ONE | SCI_CONFIG_PAR_NONE));
-    SCI_enableFIFO(SCIA_BASE);
-
-    //
-    // Enable the Interrupts (RX, RXERR) and set the FIFO Level Interrupts
-    //
-    SCI_enableInterrupt(SCIA_BASE, (SCI_INT_RXFF | SCI_INT_TXFF | SCI_INT_RXERR));
-    SCI_setFIFOInterruptLevel(SCIA_BASE, SCI_FIFO_TX4, SCI_FIFO_RX2);
-
-    //
-    // Resets
-    //
-    SCI_performSoftwareReset(SCIA_BASE);
-    SCI_resetChannels(SCIA_BASE);
-    SCI_resetRxFIFO(SCIA_BASE);
-    SCI_resetTxFIFO(SCIA_BASE);
-
-    //
-    // Initialize the data buffer
-    //
-    uint16_t i;
-    for(i = 0; i < 2; i++)
-    {
-        rDataA[i] = 0;
-    }
-
-    //
-    // Finally, enable the module
-    //
-    SCI_enableModule(SCIA_BASE);
-}
-
-// Name - Info
-// Input:
-// Output:
-__interrupt void sciaTXFIFOISR(void)
-{
-    //SCI_writeCharArray(SCIA_BASE, rDataA, 2);
-
-    Interrupt_disable(INT_SCIA_TX);
-
-    SCI_clearInterruptStatus(SCIA_BASE, SCI_INT_TXFF);
-
-    Interrupt_clearACKGroup(INTERRUPT_ACK_GROUP9);
-}
-
-// sciaRXFIFOISR - Info
-// Input: -
-// Output: -
-__interrupt void sciaRXFIFOISR(void)
-{
-
-    SCI_readCharArray(SCIA_BASE, rDataA, 2);
-
-    SCI_clearOverflowStatus(SCIA_BASE);
-
-    SCI_clearInterruptStatus(SCIA_BASE, (SCI_INT_RXFF|SCI_INT_RXERR));
-
-    Interrupt_clearACKGroup(INTERRUPT_ACK_GROUP9);
 }
 
 //

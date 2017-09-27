@@ -10,6 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./UART.obj" \
 "./main.obj" \
 "./device/device.obj" \
 "../2837xD_RAM_lnk_cpu1.cmd" \
@@ -157,8 +158,8 @@ F2837x_uart_fifo.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "device\device.obj" 
-	-$(RM) "main.d" "device\device.d" 
+	-$(RM) "UART.obj" "main.obj" "device\device.obj" 
+	-$(RM) "UART.d" "main.d" "device\device.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -1,0 +1,3 @@
+#ifndef RTW_HEADER_SimulinkGUI_types_h_
+#define RTW_HEADER_SimulinkGUI_types_h_
+#endif

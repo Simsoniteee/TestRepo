@@ -1,0 +1,105 @@
+UART_Protocol_17062016.zip:
+	- Erstellung .h und .c files
+	- MCSP_Decode() fertig
+	- Größe des UART SW-fifos auf 16byte angepasst, da maximale Protokolframelänge ohne CRC bereits 12 byte betragen kann. Mit CRC-16 14 byte
+	To Do: 	- UART0_InCharNonBlocking !!
+			- MCSP_StoreData() und MCSP_ProcessData() schreiben
+			- Codierung
+
+UART_Protocol_21062016.zip:
+	- UART0_InCharNonBlocking in UART0.h und UART0.c hinzugefügt
+	- Erweiterungen in PROTOCOL.h
+	- MCSP_StoreData() fertig
+	- Name ## fifo_size() in FIFO.h eingefügt -> dient zur Abfrage ob Daten im Fifo vorhanden sind
+	
+UART_Protocol_08072016.zip:
+	- MCSP_Decode() umgeschrieben
+	- MCSP_StoreData(uint8_t ui8Length) erhält Input
+	To Do: - MCSP_StoreData() umschreiben. Gibt SUCCESS zurück wenn kein EOF gespeicher wird. Andernfalls FAIL
+	
+UART_Protocol_11072016.zip:
+	- MCSP_StoreData() umgeschrieben
+	- UART0_SWRxFifoClear() in UART0.h und UART0.c hinzugefügt -> löscht alle Daten im SW RX fifo
+	- Testen von MCSP_StoreData() und MCSP_Decode() fehlerfrei abgeschlossen
+	To Do: 	- CRC und Encode Funktionen schreiben
+		 	- ProcessData() schreiben. IDs evtl. als struct anlegen
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+		 	
+UART_Protocol_12072016.zip:
+	- Überarbeiten des main() Testprogramms
+	To Do: 	- CRC und Encode Funktionen schreiben
+		 	- ProcessData() schreiben. IDs evtl. als struct anlegen
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+		 	- evtl MCSP_StoreData() nochmal überarbeiten -> eleganter lösen
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano
+		 	
+UART_Protocol_28072016.zip:
+	- Überarbeiten des main() Testprogramms
+	- Neu Aufsetzen der Protokollfunktionen
+	- Testen von MCSP_Decode() -> OK!
+	To Do:	- Funktion für UpdateDate() schreiben im main wie sie später verwendet werden soll!
+			- ProcessData() schreiben. IDs evtl. als struct anlegen
+			- Funktion für Error Handling schreiben
+		 	- CRC und Encode Funktionen schreiben
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano
+			
+UART_Protocol_05082016.zip:
+	- UART0_SWRxFifoGet zum Aufruf in anderen Files geschrieben
+	To Do:	- neu Aufsetzen der Protokolfunktionen als FSM
+	
+UART_Protocol_03092016.zip:
+	- Hardwareinterrupt für HW Rx Fifo auf >7/8 (>15Byte) gesetzt -> Feste Protokolllänge von maximal 16Byte eines Frames -> 12 Byte Payload bei 8bit CRC (SOF,DLC,ID,CRC)
+	TO DO: 	- Funktion für UpdateDate() schreiben im main wie sie später verwendet werden soll!
+			- ProcessData() schreiben. IDs evtl. als struct anlegen
+			- Funktion für Error Handling schreiben
+		 	- CRC und Encode Funktionen schreiben
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano
+			
+UART_Protocol_26092016.zip:
+	- Einführung MCSP_PACKET struct für Empfangs/Sendepackete
+	- Anpassungen an MCSP_Decode()
+	TO DO: 	- Funktion für UpdateData() schreiben im main wie sie später verwendet werden soll!
+			- ProcessData() schreiben. IDs evtl. als struct anlegen
+			- Funktion für Error Handling schreiben
+		 	- CRC und Encode Funktionen schreiben
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano
+			
+UART_Protocol_10102016.zip:
+	- MCSP_Encode() -> noch zu überarbeiten mit Return Werten
+	TO DO: 	- Funktion für UpdateData() schreiben im main wie sie später verwendet werden soll!
+			- ProcessData() schreiben. IDs evtl. als struct anlegen
+			- Funktion für Error Handling schreiben
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano
+			
+UART_Protocol_11102016.zip:
+	- Überarbeitung UART0.h und UART0.c -> FIFO.h wird nicht mehr genutzt --> Verwenden der Fifofunktionen in PROTOCOL.c über UART0.h => sauberer!!
+	TO DO: 	- Funktion für UpdateData() schreiben im main wie sie später verwendet werden soll!
+			- ProcessData() schreiben. IDs evtl. als struct anlegen
+			- Funktion für Error Handling schreiben
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano
+			
+UART_Protocol_16102016.zip:
+	- Überarbeitung von SYSTEM.H (typedefs, structs...)
+	- Erweiterung PROOCOL.H und PROTOCOL.c -> Funktionen zum packen bzw. interpretieren von zu sendenden/empfangenen Daten
+	TO DO: 	- ProcessData() schreiben.
+			- Funktion für Error Handling schreiben
+		 	- Eingabe über Konsole und GUI ermöglichen!!
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano			
+			
+UART_Protocol_25102016.zip:
+	- Erstellen von Receive und Send Funktionen für MotorControl und MeasurementValues
+	- Erstellen von ShiftInBuffer() in PROTOCOL.c
+	TO DO: 	- ProcessData() schreiben.
+			- Funktion für Error Handling schreiben
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano	
+			
+UART_Protocol_26102016.zip:
+	- Erstellen von GrabFromBuffer() in PROTOCOL.c
+	TO DO: 	- ProcessData() schreiben.
+			- Funktion für Error Handling schreiben
+			- StartCritical() EndCritical() und EnterLPMode() in startupfile -> siehe Valvano	
